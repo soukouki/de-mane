@@ -1,6 +1,11 @@
 -- dice game
 
 def main : IO Unit := do
+  IO.println "What is your name?"
+  IO.print "> "
+  let stdin ← IO.getStdin 
+  let name ← stdin.getLine.map String.trim
+  IO.println s!"Hello, {name}!"
   IO.println "Rolling dice..."
   let r1 ← IO.rand 1 6
   IO.println s!"Die1: {r1}"
