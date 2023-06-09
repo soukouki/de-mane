@@ -5,5 +5,10 @@ def main : IO Unit := do
   let r1 ← IO.rand 1 6
   IO.println s!"Die1: {r1}"
   let r2 ← IO.rand 1 6
-  IO.println s!"Die2: {r2}" 
-  IO.println s!"Total value: {r1 + r2}"
+  IO.println s!"Die2: {r2}"
+  let total := r1 + r2
+  IO.println s!"Total value: {total}"
+  if total > 7 then
+    IO.println "You won!"
+  else
+    IO.println "You lost!"
