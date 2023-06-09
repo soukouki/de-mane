@@ -14,6 +14,6 @@ def main : IO Unit := do
   let total := r1 + r2
   IO.println s!"Total value: {total}"
   if total > 7 then
-    IO.println "You won!"
+    IO.println s!"{name} won!"
   else
-    IO.println "You lost!"
+    IO.println s!"{name} lost!"
