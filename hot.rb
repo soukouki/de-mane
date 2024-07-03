@@ -12,3 +12,8 @@ tails = 0
   end
 end
 puts "Heads: #{heads}, Tails: #{tails}"
+if heads > tails
+  puts "You win!"
+else
+  puts "You lose!"
+end
