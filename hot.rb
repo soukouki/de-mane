@@ -1,4 +1,9 @@
 
+puts "Who are you?"
+print "> "
+name = gets.chomp
+puts "Hello, #{name}!"
+
 puts "Tossing a coin..."
 heads = 0
 tails = 0
